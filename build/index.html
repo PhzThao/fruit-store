@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/build/css/styles.css" rel="stylesheet">
+    <link rel="shorcut icon" href="./img/fruitlogo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/build/js/app.js"></script>
+    <title>Fruit store</title>
+</head>
+<body>
+    <header class="bg-white duration-200 relative">
+        <div class="py-4 mx-2">
+            <div class="container">
+                <div class="flex gap-4 items-center justify-between">
+                    <div class="flex gap-4 items-center">
+                        <a 
+                        href="#" 
+                        class="text-green-600 tracking-tight font-semibold text-2xl sm:text-4xl">
+                            Fruit store
+                        </a>
+                        <div class="hidden lg:block">
+                            <ul class="flex flex-row gap-4 text-xl items-center">
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="groceries.html">Mọi mặt hàng</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="fruits.html">Trái cây</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="juice.html">Nước ép</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="hidden lg:block">
+                            <ul class="flex flex-row gap-4 text-xl items-center">
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="contactus.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="cart-btn">
+                            <a class="flex flex-row gap-2 text-lg cursor-pointer">
+                                <div id="total-bill">0 VND</div>
+                                <button>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="hidden lg:block">
+                            <a class="cursor-pointer" href="login.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div>
+                        <div id="mobile-menu" class="block lg:hidden text-2xl">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="bg-gradient-to-b from-stone-100 to-stone-300">
+            <article class="w-max-4xl mx-auto">
+                <div class="flex flex-col-reverse sm:flex-row items-center py-8 sm:py-24">
+                    <img src="/build/img/png-clipart-vegetables-vegetable-vegetarian-cuisine-cooking-food-health-vegetables-natural-foods-leaf-vegetable.png" alt="" class="w-1/3 min-w-80 flex-grow-0">
+                    <div class="flex flex-col items-center text-center gap-2 justify-between w-full sm:w-2/3">
+                        <div class="font-semibold text-xl">Chất lượng rau củ tốt nhất</div>
+                        <div class="text-4xl font-bold">Ăn để bảo vệ sức khoẻ của bạn</div>
+                        <div class="text-left">Veniam sit id qui sunt. Sunt sunt do dolor ad velit commodo proident nisi qui. Laborum dolore dolor do sit non. Mollit cillum deserunt magna Lorem id pariatur Lorem do proident laborum fugiat aute commodo cupidatat. Enim Lorem commodo eiusmod sunt anim veniam mollit labore dolor officia.</div>
+                        <a href="" class="bg-green-600 px-4 py-2 rounded-xl text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="text-white flex flex-row flex-wrap">
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Miễn phí ship trong bán kính 2km</div>
+                        <div>Chỉ từ 10k trở lên</div>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-address-book"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Chứng chỉ organic</div>
+                        <div>100% sản phẩm của chúng tôi là organic</div>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4 flex-grow">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Dễ dàng trả hàng</div>
+                        <div>Hoàn tiền 100% nếu sản phẩm của chúng tôi không phải là organic</div>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4 flex-grow">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-money-bill"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Giá cả tiết kiệm</div>
+                        <div>Hàng hoá có giá cả phải chăng</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="mx-auto max-w-5xl">
+                <div class="font-bold text-3xl text-center mb-2">Sản phẩm bán chạy</div>
+                <div class="flex flex-row flex-wrap">
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/carrot.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Cà rốt</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">20000 VND</div>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/tomato.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Cà chua</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">17000 VND</div>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/bittermelon.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Mướp đắng</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">20000 VND</div>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/salad.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Xà lách</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">50000 VND</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="bg-black">
+                <div class="mx-auto max-w-4xl">
+                    <div class="text-5xl font-bold text-white py-4 text-center">Giảm 25% cho lần mua đầu tiên</div>
+                </div>
+            </article>
+            <article class="bg-rose-300">
+                <div class="mx-auto max-w-4xl">
+                    <div class="flex flex-col items-center">
+                        <div class="w-0 h-0 
+                            border-l-[10px] border-l-transparent
+                            border-t-[15px] border-t-black
+                            border-r-[10px] border-r-transparent">
+                        </div>
+                        <div class="text-2xl font-bold py-2 text-left">Mua ngay đi, không cần phải đăng ký đâu</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="pb-8">
+            <article class="mx-auto max-w-5xl">
+                <div class="font-bold text-3xl text-center mb-2">Sản phẩm thịnh hành</div>
+                <div class="flex flex-row flex-wrap">
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/carrot.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Cà rốt</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">20000 VND</div>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/tomato.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Cà chua</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">17000 VND</div>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/bittermelon.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Mướp đắng</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">20000 VND</div>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 text-center">
+                        <div href="" class="w-full overflow-hidden relative mx-auto h-auto">
+                            <a href="">
+                                <img src="/build/img/salad.png" class="w-full h-auto relative z-0 transition-all aspect-square duration-200 hover:scale-110">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="text-2xl font-semibold">Xà lách</div>
+                        </a>
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="font-semibold">50000 VND</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="text-3xl text-center font-semibold">Đánh giá của khách hàng</section>
+        <section id="default-carousel" class="relative" data-carousel="static">
+            <div class="overflow-hidden relative h-72 sm:h-52 rounded-lg">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl">
+                        Primer Slide
+                    </span>
+                    <div class="block absolute top-1/2 left-1/2 w-3/4 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex flex-row gap-4">
+                            <img src="/build/img/naruto.jpg" class="rounded-full aspect-square w-10 h-10">
+                            <div>
+                                <div class="text-2xl font-semibold pb-2">Naruto</div>
+                                <div class="text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div>Con lãnh đạo làm lãnh đạo là hạnh phúc của dân tộc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    
+                    <div class="block absolute top-1/2 left-1/2 w-3/4 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex flex-row gap-4">
+                            <img src="/build/img/goku.png" class="rounded-full aspect-square w-10 h-10">
+                            <div>
+                                <div class="text-2xl font-semibold pb-2">Goku</div>
+                                <div class="text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div>Hoa rơi cửa phật. Vạn vật thua goku.Tiên thua goku. Hậu thua goku. Học ăn học nói học thua goku. Trên đời này không có chuyện đúng sai, chỉ có bị goku đánh hoặc thua goku. Không có kẻ thù hay bạn bè vĩnh viễn, chỉ có thua goku là vĩnh cửu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    
+                    <div class="block absolute top-1/2 left-1/2 w-3/4 -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex flex-row gap-4">
+                            <img src="/build/img/jotaro.jpg" class="rounded-full aspect-square w-10 h-10">
+                            <div>
+                                <div class="text-2xl font-semibold pb-2">Jotaro</div>
+                                <div class="text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div>Vậy là nó cùng loại Stand với Star Platinum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                <button class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+
+            <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-black/30 group-focus:ring04 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="hidden">Next</span>
+                </span>
+            </button>
+            <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-black/30 group-focus:ring04 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="hidden">Next</span>
+                </span>
+            </button>
+        </section>
+    </main>
+    <footer class="bg-black">
+        <div class="flex flex-col sm:flex-row py-10">
+            <div class="w-full md:w-1/2 px-4 my-2">
+                <div 
+                href="index.html" 
+                class="text-green-600 tracking-tight font-semibold text-2xl sm:text-4xl">
+                    Fruit store
+                </div>
+                <div class="text-white italic">Minim id incididunt incididunt est aute veniam culpa. Deserunt dolore Lorem culpa elit sit dolore commodo elit. Eu voluptate laboris Lorem aliqua. Sit in aliqua duis laboris adipisicing labore anim ipsum. Aute culpa enim exercitation enim do officia mollit. Ea anim sit aliqua aliqua.</div>
+            </div>
+            <div class="w-full md:w-1/4 text-white px-4 my-2">
+                <div class="text-2xl font-semibold">Thông tin cửa hàng</div>
+                <ul>
+                    <li class="hover:text-green-500">
+                        <a href="">Về chúng tôi</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="contactus.html">Liên hệ với chúng tôi</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Chính sách riêng tư</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Thoả thuận và điều kiện</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Hỏi đáp</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-white px-4 my-2">
+                <div class="text-2xl font-semibold">Liên hệ</div>
+                <ul>
+                    <li>
+                        Địa chỉ: 123 Nguyễn Văn Linh
+                    </li>
+                    <li>
+                        Số điện thoại: 09325627743
+                    </li>
+                    <li>
+                        Email: fruitstore@fruitstore.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t flex flex-col sm:flex-row sm:justify-between text-white px-4 py-2">
+            <div>&copy; <span class="text-green-400">Fruit Store</span>, All right reserved</div>
+            <div>Designed By HTML Codex Distributed By ThemeWagon</div>
+        </div>
+    </footer>
+    <div id="cart-popup" class="hidden h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 backdrop-blur-sm">
+        <div class="w-1.5/4 fixed right-0 h-screen p-4 shadow-md bg-white duration-200 flex flex-col justify-between">
+            <div>
+                <button id="close-cart-btn" class="relative top-0 right-0 z-50 pb-2"><i class="fa-solid fa-x"></i></button>
+                <div id="shopping-list" class="overflow-y-auto h-[calc(100vh-110px)]">
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-row justify-between text-lg font-semibold">
+                    <div>Tổng cộng</div>
+                    <div id="total-bill-popup">0 VND</div>
+                </div>
+                <button class="w-full h-10 bg-green-400 text-white" onclick="window.location.href='cart.html'">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu-popup" class="hidden h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 backdrop-blur-sm duration-200">
+        <div class="w-3/4 fixed right-0 h-screen p-4 shadow-md bg-white duration-200">
+            <div>
+                <button id="close-menu-btn" class="relative top-0 right-0 z-50 pb-2"><i class="fa-solid fa-x"></i></button>
+                <div></div>
+            </div>
+            <div>
+                <ul class="text-xl">
+                    <li class="py-2">
+                        <a href="login.html">Đăng nhập</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="groceries.html">Mọi mặt hàng</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="fruits.html">Trái cây</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="juice.html">Nước ép</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="aboutus.html">Về chúng tôi</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="contactus.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</body>
+</html>

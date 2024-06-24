@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/build/css/styles.css" rel="stylesheet">
+    <link rel="shorcut icon" href="./img/fruitlogo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/build/js/app.js"></script>
+    <title>Fruit store</title>
+</head>
+<body>
+    <header class="bg-white duration-200 relative">
+        <div class="py-4 mx-2">
+            <div class="container">
+                <div class="flex gap-4 items-center justify-between">
+                    <div class="flex gap-4 items-center">
+                        <a 
+                        href="index.html" 
+                        class="text-green-600 tracking-tight font-semibold text-2xl sm:text-4xl">
+                            Fruit store
+                        </a>
+                        <div class="hidden lg:block">
+                            <ul class="flex flex-row gap-4 text-xl items-center">
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="groceries.html">Mọi mặt hàng</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="fruits.html">Trái cây</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="juice.html">Nước ép</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="hidden lg:block">
+                            <ul class="flex flex-row gap-4 text-xl items-center">
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="contactus.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="cart-btn">
+                            <a class="flex flex-row gap-2 text-lg cursor-pointer">
+                                <div id="total-bill">0 VND</div>
+                                <button>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="hidden lg:block">
+                            <a class="cursor-pointer" href="login.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div>
+                        <div id="mobile-menu" class="block lg:hidden text-2xl">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="pb-8 bg-stone-100">
+        <section>
+            <article class="mx-auto max-w-4xl">
+                <div class="py-4">
+                    <a href="/build/index.html" class="hover:text-green-400">Home</a> / <a href="/build/groceries.html" class="hover:text-green-400">juices</a>
+                </div>
+                <div class="text-5xl bg-green-600 text-white py-4 px-4">Nước ép</div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="mx-auto max-w-4xl flex flex-row justify-between py-2">
+                <div>Hiển thị 1-9/9 kết quả</div>
+                <select id="juices-sort" class="float-right">
+                    <option value="sort1">Sắp xếp từ A-Z</option>
+                    <option value="sort2">Sắp xếp từ Z-A</option>
+                    <option value="sort3">Sắp xếp theo mức giá tăng dần</option>
+                    <option value="sort4">Sắp xếp theo mức giá giảm dần</option>
+                </select>
+            </article>
+            <article class="mx-auto max-w-4xl flex gap-2">
+                <input id="search-bar" type="text" class="py-1 pl-2 flex-grow" placeholder="Tìm kiếm">
+                <button id="search-btn" class="bg-green-400 px-8 py-1 active:bg-green-600"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </article>
+            <article class="mx-auto max-w-4xl">
+                <div id="juices-container" class="flex flex-row flex-wrap">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-black">
+        <div class="flex flex-col sm:flex-row py-10">
+            <div class="w-full md:w-1/2 px-4 my-2">
+                <div 
+                href="index.html" 
+                class="text-green-600 tracking-tight font-semibold text-2xl sm:text-4xl">
+                    Fruit store
+                </div>
+                <div class="text-white italic">Minim id incididunt incididunt est aute veniam culpa. Deserunt dolore Lorem culpa elit sit dolore commodo elit. Eu voluptate laboris Lorem aliqua. Sit in aliqua duis laboris adipisicing labore anim ipsum. Aute culpa enim exercitation enim do officia mollit. Ea anim sit aliqua aliqua.</div>
+            </div>
+            <div class="w-full md:w-1/4 text-white px-4 my-2">
+                <div class="text-2xl font-semibold">Thông tin cửa hàng</div>
+                <ul>
+                    <li class="hover:text-green-500">
+                        <a href="">Về chúng tôi</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="contactus.html">Liên hệ với chúng tôi</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Chính sách riêng tư</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Thoả thuận và điều kiện</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Hỏi đáp</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-white px-4 my-2">
+                <div class="text-2xl font-semibold">Liên hệ</div>
+                <ul>
+                    <li>
+                        Địa chỉ: 123 Nguyễn Văn Linh
+                    </li>
+                    <li>
+                        Số điện thoại: 09325627743
+                    </li>
+                    <li>
+                        Email: fruitstore@fruitstore.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t flex flex-col sm:flex-row sm:justify-between text-white px-4 py-2">
+            <div>&copy; <span class="text-green-400">Fruit Store</span>, All right reserved</div>
+            <div>Designed By HTML Codex Distributed By ThemeWagon</div>
+        </div>
+    </footer>
+    <div id="cart-popup" class="hidden h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 backdrop-blur-sm">
+        <div class="w-full sm:w-1/2 lg:w-1/3 fixed right-0 h-screen p-4 shadow-md bg-white duration-200 flex flex-col justify-between">
+            <div>
+                <button id="close-cart-btn" class="relative top-0 right-0 z-50 pb-2"><i class="fa-solid fa-x"></i></button>
+                <div id="shopping-list" class="overflow-y-auto h-[calc(100vh-110px)]">
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-row justify-between text-lg font-semibold">
+                    <div>Tổng cộng</div>
+                    <div id="total-bill-popup">0 VND</div>
+                </div>
+                <button class="w-full h-10 bg-green-400 text-white" onclick="window.location.href='cart.html'">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu-popup" class="hidden h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 backdrop-blur-sm duration-200">
+        <div class="w-3/4 fixed right-0 h-screen p-4 shadow-md bg-white duration-200">
+            <div>
+                <button id="close-menu-btn" class="relative top-0 right-0 z-50 pb-2"><i class="fa-solid fa-x"></i></button>
+                <div></div>
+            </div>
+            <div>
+                <ul class="text-xl">
+                    <li class="py-2">
+                        <a href="login.html">Đăng nhập</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="groceries.html">Mọi mặt hàng</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="fruits.html">Trái cây</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="juice.html">Nước ép</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="aboutus.html">Về chúng tôi</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="contactus.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</body>
+</html>

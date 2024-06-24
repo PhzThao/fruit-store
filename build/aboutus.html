@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/build/css/styles.css" rel="stylesheet">
+    <link rel="shorcut icon" href="./img/fruitlogo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/build/js/app.js"></script>
+    <title>Fruit store</title>
+</head>
+<body>
+    <header class="bg-white duration-200 relative">
+        <div class="py-4 mx-2">
+            <div class="container">
+                <div class="flex gap-4 items-center justify-between">
+                    <div class="flex gap-4 items-center">
+                        <a 
+                        href="index.html" 
+                        class="text-green-600 tracking-tight font-semibold text-2xl sm:text-4xl">
+                            Fruit store
+                        </a>
+                        <div class="hidden lg:block">
+                            <ul class="flex flex-row gap-4 text-xl items-center">
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="groceries.html">Mọi mặt hàng</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="fruits.html">Trái cây</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="juice.html">Nước ép</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="hidden lg:block">
+                            <ul class="flex flex-row gap-4 text-xl items-center">
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </li>
+                                <li class="hover:bg-green-400 hover:text-white p-1 rounded-xl font-semibold duration-200">
+                                    <a href="contactus.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="cart-btn">
+                            <a class="flex flex-row gap-2 text-lg cursor-pointer">
+                                <div id="total-bill">0 VND</div>
+                                <button>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="hidden lg:block">
+                            <a class="cursor-pointer" href="login.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div>
+                        <div id="mobile-menu" class="block lg:hidden text-2xl">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article class="bg-[url('/build/img/fruitshop.jpg')] font-bold text-3xl sm:text-6xl text-center py-28 sm:py-40 bg-fixed bg-no-repeat bg-cover text-white">Về chúng tôi</article>
+        </section>
+        <section class="py-8 px-2">
+            <article class="flex flex-col md:flex-row mx-auto max-w-4xl bg-slate-100 px-2">
+                <div class="w-full md:w-1/2 my-4">
+                    <h1 class="text-3xl font-bold">Chúng tôi là cửa hàng yêu thích của bạn</h1>
+                    <p>Incididunt eu officia aliqua laborum est cillum proident. Lorem do adipisicing occaecat magna do aliquip aliqua ullamco nostrud aute anim do. Non ex eiusmod ullamco qui officia dolore occaecat cupidatat sit sunt tempor.</p>
+                </div>
+                <div class="w-full md:w-1/2 my-4">
+                    <img src="/build/img/fruit.png">
+                </div>
+            </article>
+        </section>
+        <section class="text-white flex flex-row flex-wrap">
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Miễn phí ship trong bán kính 2km</div>
+                        <div>Chỉ từ 10k trở lên</div>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-address-book"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Chứng chỉ organic</div>
+                        <div>100% sản phẩm của chúng tôi là organic</div>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4 flex-grow">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Dễ dàng trả hàng</div>
+                        <div>Hoàn tiền 100% nếu sản phẩm của chúng tôi không phải là organic</div>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-black mx-auto max-w-4xl flex flex-col sm:flex-row p-4 flex-wrap w-full md:w-1/2 lg:w-1/4 flex-grow">
+                <div class="bg-slate-800 p-4 flex-grow">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-money-bill"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold">Giá cả tiết kiệm</div>
+                        <div>Hàng hoá có giá cả phải chăng</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="py-8">
+            <article class="max-w-4xl mx-auto flex flex-col md:flex-row gap-4">
+                <div class="w-1/2 mx-auto md:w-5/12">
+                    <img class="w-full" src="/build/img/certificate.jpg">
+                </div>
+                <div class="w-full md:w-7/12 flex flex-col gap-8">
+                    <div class="flex flex-row gap-8 items-center">
+                        <img class="w-20 h-20" src="/build/img/organic_certificate.png">
+                        <div>
+                            <div class="text-3xl font-semibold">Sản phẩm đã được chứng nhận</div>
+                            <div>Duis sint sunt cillum consectetur officia nostrud.</div>
+                        </div>
+                    </div>
+                    <div class="text-4xl font-bold">
+                        Chúng tôi kinh doanh các sản phẩm hữu cơ chất lượng khác nhau!
+                    </div>
+                    <div class="flex gap-4 sm:gap-12 flex-row text-xl">
+                        <ul class="list-image-[url('/build/img/checked.png')] ml-8">
+                            <li>Trái cây tươi</li>
+                            <li>Trái cây sấy khô</li>
+                            <li>Rau củ tươi</li>
+                            <li>Rau củ sấy khô</li>
+                        </ul>
+                        <ul class="list-image-[url('/build/img/checked.png')] ml-8">
+                            <li>Sản phẩm sữa</li>
+                            <li>Mật ong nguyên chất</li>
+                            <li>Trà nguyên chất</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </article>
+        </section>
+        <section class="bg-[url('/build/img/fruitshop2.jpg')] font-bold text-2xl sm:text-3xl text-center bg-fixed bg-no-repeat bg-cover py-8 sm:py-0 my-8">
+            <article class="bg-white w-3/4 sm:w-1/3 py-20 mx-auto">
+                <div class="mb-8">Theo dõi chúng tôi trên</div>
+                <div class="flex flex-row justify-around gap-4">
+                    <a href="https://zalo.me/pc">
+                        <img src="/build/img/zalo_logo.png" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img src="/build/img/Facebook_Logo_(2019).png" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="/build/img/instagram_logo.png" class="w-8 h-8">
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-black">
+        <div class="flex flex-col sm:flex-row py-10">
+            <div class="w-full md:w-1/2 px-4 my-2">
+                <div 
+                href="index.html" 
+                class="text-green-600 tracking-tight font-semibold text-2xl sm:text-4xl">
+                    Fruit store
+                </div>
+                <div class="text-white italic">Minim id incididunt incididunt est aute veniam culpa. Deserunt dolore Lorem culpa elit sit dolore commodo elit. Eu voluptate laboris Lorem aliqua. Sit in aliqua duis laboris adipisicing labore anim ipsum. Aute culpa enim exercitation enim do officia mollit. Ea anim sit aliqua aliqua.</div>
+                <br>
+                <div 
+                href="index.html" 
+                class="text-white tracking-tight font-semibold text-2xl sm:text-4xl">
+                Follow us
+
+                </div>
+                <br>
+                <div class="flex ml-1 gap-4">
+                    <a href="https://zalo.me/pc">
+                      <img src="/build/img/zalo_logo.png" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                      <img src="/build/img/Facebook_Logo_(2019).png" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                      <img src="/build/img/instagram_logo.png" class="w-8 h-8">
+                    </a>
+                  </div>
+                  
+            </div>
+            <div class="w-full md:w-1/4 text-white px-4 my-2">
+                <div class="text-2xl font-semibold">Thông tin cửa hàng</div>
+                <ul>
+                    <li class="hover:text-green-500">
+                        <a href="">Về chúng tôi</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="contactus.html">Liên hệ với chúng tôi</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Chính sách riêng tư</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Thoả thuận và điều kiện</a>
+                    </li>
+                    <li class="hover:text-green-500">
+                        <a href="">Hỏi đáp</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-white px-4 my-2">
+                <div class="text-2xl font-semibold">Liên hệ</div>
+                <ul>
+                    <li>
+                        Địa chỉ: 123 Nguyễn Văn Linh
+                    </li>
+                    <li>
+                        Số điện thoại: 09325627743
+                    </li>
+                    <li>
+                        Email: fruitstore@fruitstore.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t flex flex-col sm:flex-row sm:justify-between text-white px-4 py-2">
+            <div>&copy; <span class="text-green-400">Fruit Store</span>, All right reserved</div>
+            <div>Designed By HTML Codex Distributed By ThemeWagon</div>
+        </div>
+    </footer>
+    <div id="cart-popup" class="hidden h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 backdrop-blur-sm">
+        <div class="w-1.5/4 fixed right-0 h-screen p-4 shadow-md bg-white duration-200 flex flex-col justify-between">
+            <div>
+                <button id="close-cart-btn" class="relative top-0 right-0 z-50 pb-2"><i class="fa-solid fa-x"></i></button>
+                <div id="shopping-list" class="overflow-y-auto h-[calc(100vh-110px)]">
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-row justify-between text-lg font-semibold">
+                    <div>Tổng cộng</div>
+                    <div id="total-bill-popup">0 VND</div>
+                </div>
+                <button class="w-full h-10 bg-green-400 text-white" onclick="window.location.href='cart.html'">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu-popup" class="hidden h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 backdrop-blur-sm">
+        <div class="w-3/4 fixed right-0 h-screen p-4 shadow-md bg-white duration-200">
+            <div>
+                <button id="close-menu-btn" class="relative top-0 right-0 z-50 pb-2"><i class="fa-solid fa-x"></i></button>
+                <div></div>
+            </div>
+            <div>
+                <ul class="text-xl">
+                    <li class="py-2">
+                        <a href="login.html">Đăng nhập</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="groceries.html">Mọi mặt hàng</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="fruits.html">Trái cây</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="">Nước ép</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="aboutus.html">Về chúng tôi</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="contactus.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</body>
+</html>
